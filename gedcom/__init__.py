@@ -221,7 +221,7 @@ class Gedcom:
         line_number = 1
         last_element = self.__root_element
         for line in gedcom_file:
-            last_element = self.__parse_line(line_number, line.decode('utf-8'), last_element)
+            last_element = self.__parse_line(line_number, line.decode('utf-8-sig'), last_element)
             line_number += 1
 
     @staticmethod
